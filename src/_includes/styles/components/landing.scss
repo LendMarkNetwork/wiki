@@ -1,8 +1,12 @@
 .title {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    width: 487px;
+    height: 365px;
+    left: calc(50% - 487px / 2 - 0.5px);
+    top: calc(50% - 365px / 2 - 662.5px);
 }
 
 header {
     background-image: url("/bg.png");
+    background-size: cover;
 }

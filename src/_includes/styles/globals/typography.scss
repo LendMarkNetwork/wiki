@@ -12,6 +12,7 @@ a:visited,
 a:active {
     text-decoration: underline;
     color: var(--lendmark);
+    transition: .2s;
     &:hover{
         color: white;
     }

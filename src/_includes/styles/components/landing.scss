@@ -1,36 +1,42 @@
-.title {
-    width: 487px;
-    height: 365px;
-}
-
+// HEADER (WIKI, BUTTONS)
 header {
+    padding-top: rem(30);
+    padding-bottom: rem(180);
     background-image: url("/bg.png");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: rem(200);
-}
-button {
-    margin-top: rem(10);
-    color: black;
 
-    border: none;
-    width: 552px;
-    height: 69px;
-}
-.tlacitko_discord {
-    text-indent: -9999px;
-    background-image: url("/tlacitko_discord.png");
-    &:hover {
-        background-image: url("/tlacitko_active_discord.png");
+    .title {
+        width: 487px;
+        height: 365px;
+    }
+
+    button {
+        margin-top: rem(35);
+        border: none;
+        width: 552px;
+        height: 69px;
+    }
+    .tlacitko_discord {
+        text-indent: -9999px; //remove text
+        background-image: url("/tlacitko_discord.png");
+        &:hover {
+            background-image: url("/tlacitko_active_discord.png");
+        }
+    }
+    .tlacitko_web {
+        text-indent: -9999px; //remove text
+        background-image: url("/tlacitko_web.png");
+        &:hover {
+            background-image: url("/tlacitko_active_web.png");
+        }
     }
 }
-.tlacitko_web {
-    text-indent: -9999px;
-    background-image: url("/tlacitko_web.png");
-    &:hover {
-        background-image: url("/tlacitko_active_web.png");
-    }
+
+//FOX, WELCOME
+.vitaj {
+    background-color: var(--dark1);
 }

@@ -25,7 +25,11 @@
         <!-- Other Tags -->
         <title>{{ title }}</title>
 
-        <link rel='stylesheet' href='/styles/base.css' />
+        {% if page_css %}
+            {% for css in page_css %}
+                <link rel='stylesheet' href='/styles/{{ css }}.css' />
+            {% endfor %}
+        {% endif %}
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 

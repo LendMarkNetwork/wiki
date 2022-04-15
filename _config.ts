@@ -5,12 +5,14 @@ import esbuild from "lume/plugins/esbuild.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import { htmlMinifier } from "https://raw.githubusercontent.com/xHyroM/xHyroM/master/packages/site/plugins/htmlMinifier.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
+import cacheBusting from "lume/middlewares/cache_busting.ts";
 
 const site = lume(
   {
     src: "./src",
     server: {
       page404: "./404/",
+      middlewares: [cacheBusting({})]
     },
   },
 );

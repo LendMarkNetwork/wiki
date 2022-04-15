@@ -1,4 +1,6 @@
 layout: layouts/docs.njk
+page_css: 
+  - base
 main_menu: docs
 docs_menu:
   - title: Overview

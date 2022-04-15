@@ -1,0 +1,25 @@
+@use "../util" as *;
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: underline;
+    color: var(--lendmark);
+    &:hover{
+        color: white;
+    }
+}
+
+//font
+h1,h2,h3,h4,h5,h6,p,a,button,li,td,th,figure,blockquote,dl,dd{
+    font-family: var(--font-main);
+    color: white;
+}
+

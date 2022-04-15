@@ -1,4 +1,6 @@
-@import 'styles/global.scss';
-
 // Highlight.js
 @import 'styles/code.scss';
+
+// imports
+@import 'styles/globals/_index.scss';
+@import 'styles/abstracts/_index.scss';

@@ -1,0 +1,10 @@
+body {
+    background: black;
+    >.container {
+      color: black;
+      display:flex;
+      &.some {
+        content: "Some text content";
+      }
+    }
+}

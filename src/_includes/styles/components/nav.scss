@@ -1,11 +1,13 @@
+@use "../util" as *;
+
 nav {
     position: fixed;
+    padding-top: var(--margin-smaller);
+    padding-bottom: var(--margin-smaller);
     width: 100%;
     top: 0;
     left: 0;
     background-color: var(--dark-nav);
-    padding-top: var(--margin-smaller);
-    padding-bottom: var(--margin-smaller);
 
     /*
     // hide mobile on pc & pc on mobile
@@ -77,12 +79,12 @@ nav {
     }
     */
     .nav_container_pc {
-        padding: 0 var(--margin-medium);
-        max-width: rem(1110);
-        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 0 var(--margin-medium);
+        margin: 0 auto;
+        max-width: rem(1110);
         .logo {
             align-self: center;
         }
@@ -100,11 +102,11 @@ nav {
         a:visited,
         a:active {
             text-decoration: underline;
-            color: var(--gray);
             font-weight: 800;
             font-size: large;
             transition: 0.2s;
             text-decoration: none;
+            color: var(--gray);
             &:hover {
                 color: white;
             }

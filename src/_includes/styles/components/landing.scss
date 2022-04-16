@@ -1,3 +1,5 @@
+@use "../util" as *;
+
 //LOCAL VARIABLES
 $button-minecraft-discord: url("/tlacitko_discord.png");
 $button-minecraft-discord-active: url("/tlacitko_active_discord.png");
@@ -6,14 +8,14 @@ $button-minecraft-web-active: url("/tlacitko_active_web.png");
 
 // HEADER (WIKI, BUTTONS)
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: var(--margin-small);
     padding-bottom: var(--margin-xxlarge);
     background-image: url("/bg.png");
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     @media (min-width: 71.875em) {
         padding-top: var(--margin-xmedium);
         padding-bottom: var(--margin-extreme);
@@ -57,13 +59,13 @@ header {
 
 //welcome (fox, text)
 .vitaj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: var(--margin-large);
     padding-bottom: var(--margin-large);
     background-color: var(--dark1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
     @media (min-width: 40em) {
         flex-direction: row;
@@ -92,26 +94,26 @@ header {
         }
     }
     section {
-        margin-top: var(--margin-xlarge);
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
+        margin-top: var(--margin-xlarge);
         @media (min-width: 40em) {
             flex-direction: row;
             align-items: center;
         }
         div {
+            margin-bottom: var(--margin-large);
+            padding: var(--margin-xmedium);
             background-color: var(--dark-box);
             border-radius: var(--br-cards);
             border-color: var(--dark-box-stroke);
             border-style: solid;
             border-width: var(--border-width-small);
             box-sizing: border-box;
-            padding: var(--margin-xmedium);
-            transition: 0.2s;
             text-align: center;
-            margin-bottom: var(--margin-large);
+            transition: 0.2s;
             @media (min-width: 40em) {
                 margin-bottom: 0;
             }

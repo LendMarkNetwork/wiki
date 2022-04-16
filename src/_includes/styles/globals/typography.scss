@@ -85,6 +85,6 @@ li {
     color: var(--gray2);
 }
 hr {
-    border: 1px solid var(--dark-box-stroke);
-    border-radius: 5px;
+    border: rem(1) solid var(--dark-box-stroke);
+    border-radius: rem(5);
 }

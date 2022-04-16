@@ -1,16 +1,20 @@
+@use "../util" as *;
+//LOCAL VARIABLES
+$footer-bg: url("/footer_bg.png");
+
 footer {
     padding-top: var(--margin-medium);
     padding-bottom: var(--margin-large);
     background-color: var(--dark-box);
-    background-image: url("/footer_bg.png");
+    background-image: $footer-bg;
     background-position: top;
     background-size: cover;
     .footer_links {
         ul {
-            list-style-type: none;
             display: flex;
             flex-direction: row;
             justify-content: center;
+            list-style-type: none;
             li {
                 margin-left: var(--margin-small);
                 margin-right: var(--margin-small);

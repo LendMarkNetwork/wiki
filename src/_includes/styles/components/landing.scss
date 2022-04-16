@@ -1,24 +1,37 @@
 // HEADER (WIKI, BUTTONS)
 header {
-    padding-top: rem(30);
-    padding-bottom: rem(180);
+    padding-top: rem(15);
+    padding-bottom: rem(100);
     background-image: url("/bg.png");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media (min-width: 71.875em) {
+        padding-top: rem(30);
+        padding-bottom: rem(180);
+    }
 
     .title {
-        width: 487px;
-        height: 365px;
+        width: 300px;
+        height: 225px;
+        @media (min-width: 40em) {
+            width: 487px;
+            height: 365px;
+        }
     }
 
     button {
         margin-top: rem(35);
+        background-size: cover;
         border: none;
-        width: 552px;
-        height: 69px;
+        width: 305px;
+        height: 38px;
+        @media (min-width: 40em) {
+            width: 552px;
+            height: 69px;
+        }
     }
     .tlacitko_discord {
         text-indent: -9999px; //remove text
@@ -44,9 +57,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @media (min-width: 40em) {
+        flex-direction: row;
+        text-align: left;
+    }
     .fox {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+        margin-bottom: rem(20);
+        @media (min-width: 40em) {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -54,10 +79,22 @@ header {
 .herny_mod {
     padding-top: rem(50);
     padding-bottom: rem(100);
+    h3 {
+        text-align: center;
+        @media (min-width: 40em) {
+            text-align: left;
+        }
+    }
     section {
         margin-top: rem(80);
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 40em) {
+            flex-direction: row;
+            align-items: center;
+        }
         div {
             background-color: var(--dark-box);
             border-radius: rem(25);
@@ -68,6 +105,10 @@ header {
             padding: rem(40);
             transition: 0.2s;
             text-align: center;
+            margin-bottom: rem(50);
+            @media (min-width: 40em) {
+                margin-bottom: 0;
+            }
 
             &:hover {
                 background-color: var(--dark-box-stroke);

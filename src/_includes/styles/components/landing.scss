@@ -114,6 +114,7 @@ header {
             box-sizing: border-box;
             text-align: center;
             transition: 0.2s;
+            cursor: pointer;
             @media (min-width: 40em) {
                 margin-bottom: 0;
             }
@@ -121,6 +122,15 @@ header {
             &:hover {
                 background-color: var(--dark-box-stroke);
                 border-color: var(--dark-box-stroke);
+                .oneblock {
+                    filter: drop-shadow(0 0 0 var(--lendmark));
+                }
+                .parkour {
+                    filter: drop-shadow(0 0 0 var(--parkour-ds));
+                }
+                .spacewars {
+                    filter: drop-shadow(0 0 0 var(--space-wars-ds));
+                }
             }
             h6 {
                 margin: var(--margin-smaller);
@@ -129,12 +139,15 @@ header {
                 width: rem(140);
             }
             .oneblock {
+                transition: 0.1s;
                 filter: drop-shadow(0 0 0.75rem var(--lendmark));
             }
             .parkour {
-                filter: drop-shadow(0 0 0.75rem rgb(228, 48, 84));
+                transition: 0.1s;
+                filter: drop-shadow(0 0 0.75rem var(--parkour-ds));
             }
             .spacewars {
+                transition: 0.1s;
                 filter: drop-shadow(0 0 0.75rem var(--space-wars-ds));
             }
         }

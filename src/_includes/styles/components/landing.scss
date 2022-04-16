@@ -103,7 +103,7 @@ header {
             flex-direction: row;
             align-items: center;
         }
-        div {
+        button {
             margin-bottom: var(--margin-large);
             padding: var(--margin-xmedium);
             background-color: var(--dark-box);
@@ -121,7 +121,6 @@ header {
             &:hover {
                 background-color: var(--dark-box-stroke);
                 border-color: var(--dark-box-stroke);
-                filter: drop-shadow(0 0 var(--margin-medium) var(--gray));
             }
             h6 {
                 margin: var(--margin-smaller);

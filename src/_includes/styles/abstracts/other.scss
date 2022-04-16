@@ -1,0 +1,21 @@
+@use "../util" as *;
+
+:root {
+    --font-main: "Poppins", sans-serif;
+
+    //margin
+    --margin-extreme: rem(180);
+    --margin-xxlarge: rem(100);
+    --margin-xlarge: rem(80);
+    --margin-large: rem(50);
+    --margin-xmedium: rem(35);
+    --margin-medium: rem(25);
+    --margin-small: rem(15);
+    --margin-smaller: rem(10);
+
+    //border radius
+    --br-cards: rem(15);
+
+    //border sitze (width)
+    --border-width-small: rem(1);
+}

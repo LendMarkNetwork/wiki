@@ -1,6 +1,6 @@
 footer {
-    padding-top: rem(15);
-    padding-bottom: rem(50);
+    padding-top: var(--margin-medium);
+    padding-bottom: var(--margin-large);
     background-color: var(--dark-box);
     background-image: url("/footer_bg.png");
     background-position: top;
@@ -12,8 +12,8 @@ footer {
             flex-direction: row;
             justify-content: center;
             li {
-                margin-left: rem(10);
-                margin-right: rem(10);
+                margin-left: var(--margin-small);
+                margin-right: var(--margin-small);
                 transition: 0.1s;
             }
         }

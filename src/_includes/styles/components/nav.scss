@@ -4,9 +4,10 @@ nav {
     top: 0;
     left: 0;
     background-color: var(--dark-nav);
-    padding-top: rem(10);
-    padding-bottom: rem(10);
+    padding-top: var(--margin-smaller);
+    padding-bottom: var(--margin-smaller);
 
+    /*
     // hide mobile on pc & pc on mobile
     @media (min-width: 40em) {
         .nav_container_mobile {
@@ -35,19 +36,51 @@ nav {
         max-width: rem(1110);
         margin: 0 auto;
         button {
+            //display: none;
             width: rem(48);
             height: rem(48);
             background-color: Transparent;
             border: none;
             cursor: pointer;
-            background-image: url("/hamburger-menu.png");
             text-indent: -9999px;
         }
+        .hamburger_open {
+            background-image: url("/hamburger-menu.png");
+        }
+        .hamburger_close {
+            background-image: url("/close.png");
+            margin-bottom: rem(20);
+        }
+        .mobile_links_container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            margin: 0;
+            top: 0;
+            right: 0;
+            list-style: none;
+            background-color: var(--dark-box);
+            a,
+            a:visited,
+            a:active {
+                text-decoration: underline;
+                color: var(--gray);
+                font-weight: 800;
+                font-size: large;
+                transition: 0.2s;
+                text-decoration: none;
+                &:hover {
+                    color: white;
+                }
+        }
     }
+    */
     .nav_container_pc {
-        padding: 0 rem(24);
+        padding: 0 var(--margin-medium);
         max-width: rem(1110);
         margin: 0 auto;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         .logo {
@@ -58,8 +91,8 @@ nav {
             list-style-type: none;
             li {
                 display: inline;
-                margin-left: rem(10);
-                margin-right: rem(10);
+                margin-left: var(--margin-smaller);
+                margin-right: var(--margin-smaller);
                 transition: 0.1s;
             }
         }

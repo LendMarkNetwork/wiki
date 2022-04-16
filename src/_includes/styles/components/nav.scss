@@ -93,8 +93,18 @@ nav {
         max-width: rem(1110);
         //border: white;
         //border-style: dashed;
-        .logo {
+        .logo,
+        .logo:active,
+        .logo:visited {
             align-self: center;
+            text-decoration: none;
+            padding: 0;
+            &:hover {
+                text-decoration: none;
+                padding: 0;
+                background-color: transparent;
+                border-style: none;
+            }
         }
         .links_container {
             align-self: center;

@@ -3,11 +3,17 @@
 nav {
     position: fixed;
     padding-top: var(--margin-smaller);
-    padding-bottom: var(--margin-smaller);
+    padding-bottom: 0;
     width: 100%;
     top: 0;
     left: 0;
     background-color: var(--dark-nav);
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: var(--dark-box-stroke);
+    border-width: rem(1);
 
     /*
     // hide mobile on pc & pc on mobile
@@ -85,6 +91,8 @@ nav {
         padding: 0 var(--margin-medium);
         margin: 0 auto;
         max-width: rem(1110);
+        //border: white;
+        //border-style: dashed;
         .logo {
             align-self: center;
         }
@@ -95,7 +103,7 @@ nav {
                 display: inline;
                 margin-left: var(--margin-smaller);
                 margin-right: var(--margin-smaller);
-                transition: 0.1s;
+                //transition: 0.1s;
             }
         }
         a,
@@ -104,11 +112,21 @@ nav {
             text-decoration: underline;
             font-weight: 800;
             font-size: large;
-            transition: 0.2s;
+            //transition: 0.2s;
             text-decoration: none;
             color: var(--gray);
+            transition: 0s;
+            padding: 0 var(--margin-small) 0 var(--margin-small);
             &:hover {
                 color: white;
+                background-color: var(--dark-box-stroke);
+                padding: rem(31) var(--margin-small) rem(19) var(--margin-small);
+                border-top-style: none;
+                border-right-style: none;
+                border-bottom-style: solid;
+                border-left-style: none;
+                border-color: white;
+                border-width: rem(1);
             }
         }
     }

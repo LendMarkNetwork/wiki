@@ -16,20 +16,25 @@ footer {
             justify-content: center;
             list-style-type: none;
             li {
-                margin-left: var(--margin-small);
-                margin-right: var(--margin-small);
+                margin-left: 0;
+                margin-right: 0;
                 transition: 0.1s;
             }
         }
         a,
         a:visited,
         a:active {
-            text-decoration: underline;
+            text-decoration: none;
             color: var(--gray);
             font-weight: 600;
+            font-size: rem(20);
+            transition: 0.2s;
+            padding: var(--margin-smallest) var(--margin-medium);
+            border-radius: var(--br-footer-links);
             transition: 0.2s;
             &:hover {
                 color: white;
+                background-color: var(--gray-footer);
             }
         }
     }

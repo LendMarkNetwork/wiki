@@ -140,15 +140,21 @@ header {
             }
             .oneblock {
                 transition: 0.2s;
-                filter: drop-shadow(0 0 0.75rem var(--lendmark));
+                filter: drop-shadow(
+                    0 0 var(--mode-selector-ds) var(--lendmark)
+                );
             }
             .parkour {
                 transition: 0.2s;
-                filter: drop-shadow(0 0 0.75rem var(--parkour-ds));
+                filter: drop-shadow(
+                    0 0 var(--mode-selector-ds) var(--parkour-ds)
+                );
             }
             .spacewars {
                 transition: 0.2s;
-                filter: drop-shadow(0 0 0.75rem var(--space-wars-ds));
+                filter: drop-shadow(
+                    0 0 var(--mode-selector-ds) var(--space-wars-ds)
+                );
             }
         }
     }

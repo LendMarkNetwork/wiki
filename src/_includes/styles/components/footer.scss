@@ -16,8 +16,8 @@ footer {
             justify-content: center;
             list-style-type: none;
             li {
-                margin-left: 0;
-                margin-right: 0;
+                margin-left: var(--margin-smallest);
+                margin-right: var(--margin-smallest);
                 transition: 0.1s;
             }
         }
@@ -29,7 +29,7 @@ footer {
             font-weight: 600;
             font-size: rem(20);
             transition: 0.2s;
-            padding: var(--margin-smallest) var(--margin-medium);
+            padding: var(--margin-smallest) var(--margin-small);
             border-radius: var(--br-footer-links);
             transition: 0.2s;
             &:hover {

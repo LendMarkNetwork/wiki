@@ -1,0 +1,39 @@
+footer {
+    padding-top: rem(15);
+    padding-bottom: rem(50);
+    background-color: var(--dark-box);
+    background-image: url("/footer_bg.png");
+    background-position: top;
+    background-size: cover;
+    .footer_links {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                margin-left: rem(10);
+                margin-right: rem(10);
+                transition: 0.1s;
+            }
+        }
+        a,
+        a:visited,
+        a:active {
+            text-decoration: underline;
+            color: var(--gray);
+            font-weight: 600;
+            transition: 0.2s;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .footer_credit {
+        text-align: center;
+        .mojang {
+            font-weight: 200;
+            font-size: small;
+        }
+    }
+}

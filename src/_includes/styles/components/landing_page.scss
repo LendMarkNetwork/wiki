@@ -16,6 +16,7 @@ header {
     padding-top: var(--margin-small);
     padding-bottom: var(--margin-xxlarge);
     background-image: $main-background;
+    background-attachment: fixed;
     background-size: cover;
     @media (min-width: 71.875em) {
         padding-top: var(--margin-xmedium);

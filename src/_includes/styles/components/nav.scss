@@ -1,12 +1,13 @@
 @use "../util" as *;
-
 nav {
     position: fixed;
     padding-top: var(--margin-smallest);
     padding-bottom: 0;
+
     width: 100%;
     top: 0;
     left: 0;
+
     background-color: var(--dark-nav);
     border-top-style: none;
     border-right-style: none;
@@ -14,9 +15,10 @@ nav {
     border-left-style: none;
     border-color: var(--dark-box-stroke);
     border-width: rem(1);
-    @media (min-width: 40em) {
+    @include breakpoint(medium) {
         padding-top: var(--margin-smaller);
     }
+
     .nav_container_pc {
         display: flex;
         flex-direction: row;
@@ -24,31 +26,31 @@ nav {
         padding: 0;
         margin: 0;
         max-width: rem(1110);
-        @media (min-width: 71.875em) {
+        @include breakpoint(large) {
             justify-content: space-between;
             padding: 0 var(--margin-medium);
             margin: 0 auto;
             max-width: rem(1110);
         }
-        //border: white;
-        //border-style: dashed;
+
         .logo,
         .logo:active,
         .logo:visited {
             display: none;
+            padding: 0;
+            margin: 0;
             width: 0;
             height: 0;
             align-self: center;
             text-decoration: none;
-            padding: 0;
             &:hover {
-                text-decoration: none;
                 padding: 0;
                 background-color: transparent;
                 border-style: none;
+                text-decoration: none;
             }
         }
-        @media (min-width: 71.875em) {
+        @include breakpoint(large) {
             .logo,
             .logo:active,
             .logo:visited {
@@ -58,13 +60,13 @@ nav {
             }
         }
         .links_container {
+            padding: 0 var(--margin-smallest);
             align-self: center;
             list-style-type: none;
             li {
                 display: inline;
-                margin-left: var(--margin-smallest);
-                margin-right: var(--margin-smallest);
-                //transition: 0.1s;
+                margin-left: 0;
+                margin-right: 0;
                 @media (min-width: 71.875em) {
                     margin-left: var(--margin-smaller);
                     margin-right: var(--margin-smaller);
@@ -74,15 +76,29 @@ nav {
         a,
         a:visited,
         a:active {
-            text-decoration: underline;
+            padding: 0 rem(4) 0 rem(4);
             font-weight: 600;
             font-size: rem(15);
-            //transition: 0.2s;
+
+            text-decoration: underline;
             text-decoration: none;
+
             color: var(--gray);
             transition: 0s;
-            padding: 0 var(--margin-smallest) 0 var(--margin-smallest);
-            @media (min-width: 71.875em) {
+            &:hover {
+                padding: rem(31) var(--margin-smallest) rem(19)
+                    var(--margin-smallest);
+
+                color: white;
+                background-color: var(--dark-box-stroke);
+                border-top-style: none;
+                border-right-style: none;
+                border-bottom-style: solid;
+                border-left-style: none;
+                border-color: white;
+                border-width: rem(1);
+            }
+            @include breakpoint(large) {
                 padding: 0 var(--margin-small) 0 var(--margin-small);
                 font-weight: 800;
                 font-size: large;
@@ -90,18 +106,6 @@ nav {
                     padding: rem(31) var(--margin-small) rem(19)
                         var(--margin-small);
                 }
-            }
-            &:hover {
-                color: white;
-                background-color: var(--dark-box-stroke);
-                padding: rem(31) var(--margin-smallest) rem(19)
-                    var(--margin-smallest);
-                border-top-style: none;
-                border-right-style: none;
-                border-bottom-style: solid;
-                border-left-style: none;
-                border-color: white;
-                border-width: rem(1);
             }
         }
     }

@@ -123,7 +123,6 @@ nav {
     }
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -131,8 +130,11 @@ nav {
     min-width: rem(160);
     box-shadow: 0 rem(8) rem(16) 0 var(--dark-box);
     z-index: 1;
-    top: rem(45);
+    top: rem(35);
     border-radius: 0 0 var(--br-dropdown) var(--br-dropdown);
+    @media (min-width: 71.875em) {
+        top: rem(45);
+    }
     a,
     a:visited,
     a:active {

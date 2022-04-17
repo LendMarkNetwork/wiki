@@ -32,7 +32,7 @@ page_css:
     <img class="title" src="/other/wiki.png" alt="wiki title" />
     <button
         class="tlacitko_discord"
-        onclick="window.open('https://discord.lendmark.sk','_blank')"
+        onclick='$.ajax({url:"https://discord.com/api/guilds/865900839481901066/widget.json",success:function(i){window.location.replace(i.instant_invite)}});'
         title="LnedMark Discord"
     >
         Discord
@@ -140,3 +140,4 @@ page_css:
         </section>
     </article>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>

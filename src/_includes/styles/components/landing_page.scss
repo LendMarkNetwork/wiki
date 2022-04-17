@@ -1,10 +1,11 @@
 @use "../util" as *;
 
 //LOCAL VARIABLES
-$button-minecraft-discord: url("/tlacitko_discord.png");
-$button-minecraft-discord-active: url("/tlacitko_active_discord.png");
-$button-minecraft-web: url("/tlacitko_web.png");
-$button-minecraft-web-active: url("/tlacitko_active_web.png");
+$button-minecraft-discord: url("/buttons/tlacitko_discord.png");
+$button-minecraft-discord-active: url("/buttons/tlacitko_active_discord.png");
+$button-minecraft-web: url("/buttons/tlacitko_web.png");
+$button-minecraft-web-active: url("/buttons/tlacitko_active_web.png");
+$main-background: url("/backgrounds/main_bg.png");
 
 // HEADER (WIKI, BUTTONS)
 header {
@@ -14,7 +15,7 @@ header {
     align-items: center;
     padding-top: var(--margin-small);
     padding-bottom: var(--margin-xxlarge);
-    background-image: url("/bg.png");
+    background-image: $main-background;
     background-size: cover;
     @media (min-width: 71.875em) {
         padding-top: var(--margin-xmedium);

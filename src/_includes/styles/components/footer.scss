@@ -1,13 +1,15 @@
 @use "../util" as *;
 //LOCAL VARIABLES
-$footer-bg: url("/footer_bg.png");
+$footer-bg: url("/backgrounds/footer_bg.png");
 
 footer {
     padding-top: var(--margin-medium);
     padding-bottom: var(--margin-large);
     background-color: var(--dark-box);
     background-image: $footer-bg;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
     background-size: cover;
     .footer_links {
         ul {
@@ -24,12 +26,12 @@ footer {
         a,
         a:visited,
         a:active {
+            padding: var(--margin-smallest) var(--margin-small);
             text-decoration: none;
             color: var(--gray);
             font-weight: 600;
             font-size: rem(20);
             transition: 0.2s;
-            padding: var(--margin-smallest) var(--margin-small);
             border-radius: var(--br-footer-links);
             transition: 0.2s;
             &:hover {

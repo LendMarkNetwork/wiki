@@ -1,4 +1,5 @@
 @use "../util" as *;
+
 nav {
     position: fixed;
     padding-top: var(--margin-smallest);
@@ -15,7 +16,7 @@ nav {
     border-left-style: none;
     border-color: var(--dark-box-stroke);
     border-width: rem(1);
-    @include breakpoint(medium) {
+    @media (min-width: 40em) {
         padding-top: var(--margin-smaller);
     }
 
@@ -26,7 +27,7 @@ nav {
         padding: 0;
         margin: 0;
         max-width: rem(1110);
-        @include breakpoint(large) {
+        @media (min-width: 71.875em) {
             justify-content: space-between;
             padding: 0 var(--margin-medium);
             margin: 0 auto;
@@ -50,7 +51,7 @@ nav {
                 text-decoration: none;
             }
         }
-        @include breakpoint(large) {
+        @media (min-width: 71.875em) {
             .logo,
             .logo:active,
             .logo:visited {
@@ -98,7 +99,7 @@ nav {
                 border-color: white;
                 border-width: rem(1);
             }
-            @include breakpoint(large) {
+            @media (min-width: 71.875em) {
                 padding: 0 var(--margin-small) 0 var(--margin-small);
                 font-weight: 800;
                 font-size: large;

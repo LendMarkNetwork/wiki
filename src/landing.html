@@ -30,8 +30,20 @@ page_css:
 <!--header (wiki, buttons)-->
 <header>
     <img class="title" src="/other/wiki.png" alt="wiki title" />
-    <button class="tlacitko_discord" title="LnedMark Discord">Discord</button>
-    <button class="tlacitko_web" title="LnedMark Web">Web</button>
+    <button
+        class="tlacitko_discord"
+        onclick="window.open('https://discord.lendmark.sk','_blank')"
+        title="LnedMark Discord"
+    >
+        Discord
+    </button>
+    <button
+        class="tlacitko_web"
+        onclick="window.open('https://lendmark.sk','_blank')"
+        title="LnedMark Web"
+    >
+        Web
+    </button>
 </header>
 
 <!--welcome (fox, welcome text)-->
@@ -45,6 +57,13 @@ page_css:
             <br />
             a sprav pull request!
         </p>
+        <br />
+        <button
+            onclick="window.open('https://github.com/LendMarkNetwork/wiki','_blank')"
+            title="LendMark Wiki GitHub"
+        >
+            GitHub
+        </button>
     </section>
 </article>
 
@@ -84,16 +103,25 @@ page_css:
     <article class="footer_links">
         <ul title="Odkazy">
             <li>
-                <a href="https://lendmark.sk" title="LendMark Web">Web</a>
+                <a
+                    href="https://lendmark.sk"
+                    target="_blank"
+                    title="LendMark Web"
+                    >Web</a
+                >
             </li>
             <li>
-                <a href="https://discord.lendmark.sk" title="LendMark Discord"
+                <a
+                    href="https://discord.lendmark.sk"
+                    target="_blank"
+                    title="LendMark Discord"
                     >Discord</a
                 >
             </li>
             <li>
                 <a
                     href="https://github.com/LendMarkNetwork/wiki"
+                    target="_blank"
                     title="LendMark GitHub"
                     >GitHub</a
                 >

@@ -35,8 +35,12 @@ header {
 
     button {
         margin-top: var(--margin-xmedium);
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
         background-size: cover;
         border: none;
+        border-radius: 0;
         width: 305px;
         height: 38px;
         cursor: pointer;

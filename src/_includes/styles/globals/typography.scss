@@ -88,3 +88,20 @@ hr {
     border: rem(1) solid var(--dark-box-stroke);
     border-radius: rem(5);
 }
+button {
+    padding: rem(2) var(--margin-medium);
+    background-color: var(--dark-box);
+    border-style: solid;
+    border-color: var(--dark-box-stroke);
+    border-radius: var(--br-button);
+    border-width: rem(1.5);
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: large;
+    font-weight: 700;
+
+    &:hover {
+        background-color: var(--dark-box-stroke);
+    }
+}

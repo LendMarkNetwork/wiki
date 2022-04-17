@@ -13,13 +13,21 @@ page_css:
             <img alt="LnedMark Logo" src="/other/logo.png" />
         </a>
         <ul class="links_container">
-            <li><a href="#" title="Globálna Wiki">Globálne</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" title="Globálna Wiki">Globálne</a>
+                    <div class="dropdown-content">
+                        <a href="#" title="SpaceWars Wiki">Mechaniky</a>
+                        <a href="#" title="Parkour Wiki">Ranky</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="#" title="OneBlock Wiki">OneBlock</a></li>
             <li>
                 <div class="dropdown">
                     <a href="#" title="Minihrová Wiki">Minihry</a>
                     <div class="dropdown-content">
-                        <a href="#" title="SpaceWars Wiki">SpaceWars</a>
+                        <a href="#" title="SpaceWars Wiki">Space Wars</a>
                         <a href="#" title="Parkour Wiki">Parkour</a>
                     </div>
                 </div>
@@ -32,15 +40,15 @@ page_css:
     <img class="title" src="/other/wiki.png" alt="wiki title" />
     <button
         class="tlacitko_discord"
-        onclick='$.ajax({url:"https://discord.com/api/guilds/865900839481901066/widget.json",success:function(i){window.location.replace(i.instant_invite)}});'
-        title="LnedMark Discord"
+        onclick='$.ajax({url:"https://discord.com/api/guilds/865900839481901066/widget.json",success:function(i){window.open(i.instant_invite)}});'
+        title="LendMark Discord"
     >
         Discord
     </button>
     <button
         class="tlacitko_web"
         onclick="window.open('https://lendmark.sk','_blank')"
-        title="LnedMark Web"
+        title="LendMark Web"
     >
         Web
     </button>
@@ -87,7 +95,7 @@ page_css:
             />
             <h6>Parkour</h6>
         </button>
-        <button title="SpaceWars Wiki" onclick="alert('lol')">
+        <button title="Space Wars Wiki" onclick="alert('lol')">
             <img
                 class="spacewars"
                 src="/games/spacewars.png"
